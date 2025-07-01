@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #segundo {
+            color: red;
+        }
+
+        .primeiro-div{
+            font-weight: bold;
+            font-size: 16px;
+            color: blue;
+        }
+
+        ul > li:last-child {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="primeiro">Primeiro parágrafo</p>
+
+    <p id="segundo">Segundo parágrafo</p>
+
+    <div class="primeiro-div">
+        Texto 1 dentro de um div
+    </div>
+
+    <div>
+        Texto 2 dentro de um div
+    </div>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+    <script>
+        /*
+        querySelector
+        querySelectorAll
+        */
+
+        let e = document.querySelector('p')
+        console.log(e)
+        console.log(document.querySelector('#segundo'))
+
+        console.log(document.querySelectorAll('div'))
+        let f = document.querySelector('.primeiro-div')
+        console.log(f)
+
+        let g = document.querySelector('ul > li:last-child')
+        console.log(g)
+
+    </script>
+
+</body>
+
+</html>
