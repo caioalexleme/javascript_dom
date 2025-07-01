@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">HTML!!!</h1>
+
+    <script>
+        function saudacao() {
+            // alert('Olá JS!')
+            alert(window.innerWidth)
+        }
+
+        // window.saudacao()
+        saudacao()
+
+        document.body.style.background = 'red'
+        document.body.style.color = 'blue'
+
+        document.getElementById('titulo').innerText = 'Novo título'
+
+        alert(location.href)
+
+        if(confirm('Deseja ir para o Google?')){
+            location.href = 'https:www.google.com'
+        }
+        
+
+    </script>
+</body>
+</html>
