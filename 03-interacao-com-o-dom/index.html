@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web</title>
-    
+
 
 </head>
+
 <body>
-    
+
+    <h2>eeeeeeeeeeeeeeeeeeeee</h2>
     <p>Conteúdo HTML</p>
+
+
 
     <script>
 
-        /*
+        /* 
         O DOM permite-nos fazer todo o tipo de interações com os seus elementos e respectivo conteúdo.
         No entanto, primeiro é necessário conseguir "chegar" ao alemento que queremos selecionar.
 
@@ -23,17 +28,20 @@
         <head> corresponde a document.head
         <body> corresponde a document.body
         */
-       
+
     </script>
 
     <script>
         console.log(document.body.childNodes)
-        document.body.childNodes[1].innerText = 'Novo texto do parágrafo'
-        document.body.childNodes[1].textContent = 'New text'
-        
-        console.log(document.documentElement.lang)
+        document.body.childNodes[1].innerText = 'Novo texto do h2'
+        document.body.childNodes[3].innerText = 'Novo texto do paragrafo'
+        document.body.childNodes[1].textContent = 'aaaaaaaaa'
 
+
+        document.documentElement.lang = 'en'
+        console.log(document.documentElement.lang)
     </script>
 
 </body>
+
 </html>
